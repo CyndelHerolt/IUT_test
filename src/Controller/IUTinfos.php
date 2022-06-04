@@ -59,18 +59,20 @@ class IUTinfos extends AbstractController
             [
                 'nom' => 'Métiers du Multimédia et de l\'internet',
                 'sigle' => 'MMI',
-                'logo' => 'logoMMI.png',//image à remplacer
+                'logo' => 'https://www.iut-troyes.univ-reims.fr/assets/img/logo_191.jpg',//image à remplacer
                 'presentation' => 'Le département Métiers de l’Internet et du Multimédia (anciennement Services et Réseaux de Communication) forme les acteurs de l’Internet, des médias numériques, de la communication plurimédia, de la création graphique.',
                 'responsable' => 'Florent Libbrecht',
-                'mail_responsable' => 'florent.libbrecht@univ-reims.fr'
+                'mail_responsable' => 'florent.libbrecht@univ-reims.fr',
+                'tel_responsable' => '03 25 42 71 60'
             ],
             [
                 'nom' => 'Carrière Juridique',
                 'sigle' => 'CJ',
-                'logo' => 'logoCJ.png',//image à remplacer
+                'logo' => 'https://www.iut-troyes.univ-reims.fr/assets/img/logo_196.jpg',//image à remplacer
                 'presentation' => 'Le département Carrières Juridiques prépare les étudiants à devenir des techniciens du droit dans des domaines variés : études de notaires, d’huissiers mais aussi des cabinets d’expert-comptable ou des services de ressources humaines.',
                 'responsable' => 'Gilles Darmon',
-                'mail_responsable' => 'gilles.darmon@univ-reims.fr'
+                'mail_responsable' => 'gilles.darmon@univ-reims.fr',
+                'tel_responsable' => '03 25 42 71 73'
             ]
         ];
 

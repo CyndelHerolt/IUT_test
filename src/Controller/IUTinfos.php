@@ -5,10 +5,10 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class LuckyController extends AbstractController
+class IUTinfos extends AbstractController
 {
     /**
-     * @Route("/lucky/number", name="app_lucky_number")
+     * @Route("/lucky/number", name="iut_test_technique")
      */
     function News()
     {
@@ -52,4 +52,35 @@ class LuckyController extends AbstractController
             ]
         );
     }
+
+    function Depts()
+    {
+        $departements =  [
+            [
+                'nom' => 'Métiers du Multimédia et de l\'internet',
+                'sigle' => 'MMI',
+                'logo' => 'logoMMI.png',//image à remplacer
+                'presentation' => 'Le département Métiers de l’Internet et du Multimédia (anciennement Services et Réseaux de Communication) forme les acteurs de l’Internet, des médias numériques, de la communication plurimédia, de la création graphique.',
+                'responsable' => 'Florent Libbrecht',
+                'mail_responsable' => 'florent.libbrecht@univ-reims.fr'
+            ],
+            [
+                'nom' => 'Carrière Juridique',
+                'sigle' => 'CJ',
+                'logo' => 'logoCJ.png',//image à remplacer
+                'presentation' => 'Le département Carrières Juridiques prépare les étudiants à devenir des techniciens du droit dans des domaines variés : études de notaires, d’huissiers mais aussi des cabinets d’expert-comptable ou des services de ressources humaines.',
+                'responsable' => 'Gilles Darmon',
+                'mail_responsable' => 'gilles.darmon@univ-reims.fr'
+            ]
+        ];
+
+        return $this->render(
+            'departements.html.twig',
+            [
+                'depts' => $departements,
+            ]
+        );
+    }
+
+
 }

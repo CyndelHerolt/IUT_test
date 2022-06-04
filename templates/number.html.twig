@@ -1,127 +1,42 @@
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Accueil IUT de Troyes</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/c610cfb1f1.js" crossorigin="anonymous"></script>
-    </head>
-    <body style="background-image: url( {{ asset ('images/background-type.png') }} ); background-size: 100vh; background-repeat: no-repeat";>
-    <header>
-        <img src="{{ asset ('images/IUT.png') }}" alt="Logo" style="width: 10.5vw; margin-left: 2vw; position: absolute; z-index: 2;">
+{% extends 'base.html.twig' %}
 
-        <div style="display: flex; flex-direction: row; align-items: center; justify-content: flex-end; padding: 15px">
-            <div style="display: flex; justify-content: space-around; width: 12vw;">
-                <a href=""><i class="fa-brands fa-facebook-f fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-twitter fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-youtube fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
-                <a href=""><i class="fa-brands fa-flickr fa-lg"></i></a>
-            </div>
-            <nav style="width: 30vw;">
-                <ul style="list-style: none ;display: flex; flex-direction: row; justify-content: space-around;font-size: .7vw; margin: 0;">
-                    <a href=""><li>Intranet</li></a>
-                    <a href=""><li>Bureau Virtuel</li></a>
-                    <a href=""><li>Messagerie</li></a>
-                    <a href=""><li>Annuaire</li></a>
-                    <a href=""><li>Bibliothèque</li></a>
-                </ul>
-            </nav>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll" style="justify-content: flex-end;">
-                    <div class="flexnav" style="margin-right: 2vw">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; font-size: .9vw">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                L'IUT
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Formations
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                International
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Entreprises
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Recherche
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Vie étudiante
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Candidatures</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Evènements
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            </ul>
-                        </li>
-                    </ul>
-                    </div>
-                    <form class="d-flex" style="margin: 0;">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
+{% block body %}
 
-    <div class="container" style="width: 100vw;">
+
+    <div class="container">
             <section class="row  col-12" style="margin: 75px auto; justify-content: space-around; justify-content: space-around">
-                <article class="col-7" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; padding: 50px; border-radius: 20px">
-                    <h1>Bachelor Universitaire de Technologie</h1>
-                    <h3>A partir de 2021, l'offre de formation des IUT évolue !</h3>
-                    <h5>Le D.U.T laisse sa place à un tout nouveau système de formation appelé B.U.T</h5>
-                    <p>Un parcours intégré en 3 ans, sans sélection supplémentaire pour atteindre le grade licence. Le nouveau diplôme s’aligne sur les standards internationaux et facilite les échanges avec les universités étrangères.
+                <article class="col-7" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; padding: 50px; border-radius: 20px; height: fit-content">
+                    <p style="color: lightgray; border-bottom: solid lightgrey 1px; font-size: .8vw">A la Une</p>
+                    <h1 style="color: #6c416c">Bachelor Universitaire de Technologie</h1>
+                    <h4>A partir de 2021, l'offre de formation des IUT évolue !</h4>
+                    <h6>Le D.U.T laisse sa place à un tout nouveau système de formation appelé <strong>B.U.T</strong></h6>
+                    <p>Un parcours intégré en 3 ans, sans sélection supplémentaire pour atteindre le grade <strong>licence</strong>. Le nouveau diplôme s’aligne sur les standards internationaux et facilite les échanges avec les universités étrangères.
+                        Tout comme le DUT, cette formation est exclusive aux IUT et sélective à l’entrée. Les <strong>B.U.T</strong> sont définis par leurs 24 spécialités. Elles s’appuieront toujours sur des programmes nationaux avec des adaptations locales.</p>
+                    <button type="button" class="btn btn-warning">En savoir plus</button>
 
-                        Tout comme le DUT, cette formation est exclusive aux IUT et sélective à l’entrée. Les B.U.T. sont définis par leurs 24 spécialités. Elles s’appuieront toujours sur des programmes nationaux avec des adaptations locales.</p>
+                    <hr style="margin: 50px 0">
+
+                    <iframe width="100%" height="350" src="https://www.youtube.com/embed/b9rnrY7mIPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <hr style="margin: 50px 0">
+
+                    <div style="display: flex; flex-direction: row">
+                        <img src="{{ asset ('images/alternance.jpg') }}" alt="Oups" style="width: 50%; margin-right: 25px">
+                        <div style="display: flex; flex-direction: column">
+                            <h2>Recrutez vos futurs alternants en B.U.T</h2>
+                            <p>L’IUT de Troyes s’engage depuis 50 ans à offrir un enseignement de qualité, en adéquation avec les besoins du monde professionnel, avec notamment la mise en place du Bachelor Universitaire de Technologie.
+                                <br><span style="color: #6c416c">Bonne nouvelle, bénéficiez de la prime d'état de 8000€ pour tout contrat d'apprentissage signé désormais avant le 30 décembre 2022.</span></p>
+                            <a href="https://bit.ly/3wDTIN9" target="_blank"><button type="button" class="btn btn-warning" style="width: 100%">Télecharger la brochure</button></a>
+                        </div>
+                    </div>
+
                 </article>
-                <aside class="col-4" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; padding: 50px; border-radius: 20px">
+                <aside class="col-4" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; padding: 50px; border-radius: 20px; backdrop-filter: blur(5px)">
                     <div style="display: flex; flex-direction: row; align-items: center; width: 55%; justify-content: space-between;">
                         <i class="fa-solid fa-newspaper fa-xl"></i>
                         <h3>Actualités</h3>
                     </div>
+
                     <hr>
 
                     {% for key in news %}
@@ -134,8 +49,51 @@
             </section>
     </div>
 
+    <footer style="background-color: #fafafa; padding: 25px;">
+        <div class="container">
+            <div class="row" style="justify-content: space-between">
+                <div class="col-3">
+                    <ul style="font-weight: lighter; list-style: none">
+                        <li style="font-weight: normal; margin-bottom: 10px">L'IUT de Troyes</li>
+                        <a href="/IUT/departements" style="text-decoration: none; color: #3b3b3b"><li>Départements</li></a>
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li>Formations</li></a>
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li>Entreprises</li></a>
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li>Vie étudiante</li></a>
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li>Evènements</li></a>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul style="font-weight: lighter; list-style: none">
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li style="font-weight: normal; margin-bottom: 10px">Outils</li></a>
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li>Intranet</li></a>
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li>Bureau virtuel</li></a>
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li>Messagerie</li></a>
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li>Annuaire</li></a>
+                        <a href="" style="text-decoration: none; color: #3b3b3b"><li>Bibliothèque</li></a>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul style="font-weight: lighter; list-style: none">
+                        <li style="font-weight: normal; margin-bottom: 10px">Contactez-nous</li>
+                        <li><a href="" style="color: #3b3b3b"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                        <a href="" style="color: #3b3b3b"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a href="" style="color: #3b3b3b"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                        <a href="" style="color: #3b3b3b"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                        <a href="" style="color: #3b3b3b"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                        <a href="" style="color: #3b3b3b"><i class="fa-brands fa-flickr fa-lg"></i></a></li>
+                        <li>9 rue de Québec <br>
+                            CS 90396 <br>
+                            1000 Troyes <br>
+                        </li>
+                        <li>03 25 42 46 46</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.7800270777334!2d4.0787552!3d48.268607599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee990d103f3b05%3A0x3673a756c4366029!2sLogements%2C%209%20Rue%20Quebec%2C%2010430%20Rosi%C3%A8res-pr%C3%A9s-Troyes!5e0!3m2!1sfr!2sfr!4v1654352856967!5m2!1sfr!2sfr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    </body>
-</html>
+{% endblock %}
+

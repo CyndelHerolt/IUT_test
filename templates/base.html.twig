@@ -1,19 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IUT de Troyes</title>
+
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         {% endblock %}
 
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+            <script src="https://kit.fontawesome.com/c610cfb1f1.js" crossorigin="anonymous"></script>
         {% endblock %}
     </head>
-    <body>
-        {% block body %}{% endblock %}
+    <body style="background-image: url( {{ asset ('images/background-type.png') }} ); background-size: 50vh; background-repeat: no-repeat; background-position: right; background-attachment: fixed">
+    <header>
+        <img src="{{ asset ('images/IUT.png') }}" alt="Logo" style="width: 10.5vw; margin-left: 2vw; position: absolute; z-index: 2;">
+
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: flex-end; padding: 15px">
+            <div style="display: flex; justify-content: space-around; width: 12vw;">
+                <a href="" style="color: #6c416c"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                <a href="" style="color: #6c416c"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <a href="" style="color: #6c416c"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="" style="color: #6c416c"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                <a href="" style="color: #6c416c"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                <a href="" style="color: #6c416c"><i class="fa-brands fa-flickr fa-lg"></i></a>
+            </div>
+            <nav style="width: 30vw;">
+                <ul style="list-style: none ;display: flex; flex-direction: row; justify-content: space-around;font-size: .7vw; margin: 0;">
+                    <a href="" style="color: #6c416c"><li>Intranet</li></a>
+                    <a href="" style="color: #6c416c"><li>Bureau Virtuel</li></a>
+                    <a href="" style="color: #6c416c"><li>Messagerie</li></a>
+                    <a href="" style="color: #6c416c"><li>Annuaire</li></a>
+                    <a href="" style="color: #6c416c"><li>Bibliothèque</li></a>
+                </ul>
+            </nav>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll" style="justify-content: flex-end;">
+                    <div class="flexnav" style="margin-right: 2vw">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px; font-size: .9vw">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    L'IUT
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Actualités</a></li>
+                                    <li><a class="dropdown-item" href="#">L'IUT en chiffres</a></li>
+                                    <li><a class="dropdown-item" href="#">Départements</a></li>
+                                    <li><a class="dropdown-item" href="#">Organigramme</a></li>
+                                    <li><a class="dropdown-item" href="#">Revue de presse</a></li>
+                                    <li><a class="dropdown-item" href="#">Rapport d'activité</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Nous trouver</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Formations
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Domaines d'étude</a></li>
+                                    <li><a class="dropdown-item" href="#">Modalités de formation</a></li>
+                                    <li><a class="dropdown-item" href="#">VAE/VAPP</a></li>
+                                    <li><a class="dropdown-item" href="#">Passeport vers l'étranger</a></li>
+                                    <li><a class="dropdown-item" href="#">Passeport vers l'université</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    International
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Relations internationales</a></li>
+                                    <li><a class="dropdown-item" href="#">Etudier à l'étranger</a></li>
+                                    <li><a class="dropdown-item" href="#">Stages à l'étranger</a></li>
+                                    <li><a class="dropdown-item" href="#">Travailler à l'étranger</a></li>
+                                    <li><a class="dropdown-item" href="#">Universités partenaires</a></li>
+                                    <li><a class="dropdown-item" href="#">Etudiants étrangers</a></li>
+                                    <li><a class="dropdown-item" href="#">TOEIC</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Entreprises
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Formation aux entreprises</a></li>
+                                    <li><a class="dropdown-item" href="#">Service emploi</a></li>
+                                    <li><a class="dropdown-item" href="#">Stages en entreprise</a></li>
+                                    <li><a class="dropdown-item" href="#">Taxe d'apprentissage</a></li>
+                                    <li><a class="dropdown-item" href="#">Faire un don à l'IUT</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Recherche
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">CRESTIC automatique</a></li>
+                                    <li><a class="dropdown-item" href="#">CRESTIC images</a></li>
+                                    <li><a class="dropdown-item" href="#">ITHEMM</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Vie étudiante
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Information et orientation</a></li>
+                                    <li><a class="dropdown-item" href="#">Démarches en lign</a></li>
+                                    <li><a class="dropdown-item" href="#">Le service santé</a></li>
+                                    <li><a class="dropdown-item" href="#">Enquêtes</a></li>
+                                    <li><a class="dropdown-item" href="#">Les services du Crous</a></li>
+                                    <li><a class="dropdown-item" href="#">Bibliothèque</a></li>
+                                    <li><a class="dropdown-item" href="#">Sports</a></li>
+                                    <li><a class="dropdown-item" href="#">Associations</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Candidatures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    Evènements
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="d-flex" style="margin: 0;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+        {% block body %}
+            {# Le contenu de chaque page sera ici #}
+        {% endblock %}
+
+
+        {% block scripts %}
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        {% endblock %}
+
     </body>
 </html>
+

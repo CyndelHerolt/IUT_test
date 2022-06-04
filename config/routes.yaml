@@ -1,0 +1,3 @@
+home: 
+    path: 'C:\MAMP\localweb\symfonyInit\IUT_test'
+        controller: IUT_test\Controller\HomeController::index

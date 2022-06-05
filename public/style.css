@@ -147,6 +147,10 @@ footer a:hover {
     flex-direction: column;
 }
 
+.events h3 {
+    margin-bottom: 25px;
+}
+
 .eventsrow {
     display: flex;
     flex-direction: row;
@@ -171,14 +175,6 @@ footer a:hover {
     padding: 50px;
     border-radius: 20px;
     backdrop-filter: blur(5px);
-}
-
-.accueil section aside div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 55%;
-    justify-content: space-between;
 }
 
 .accueil section aside img {

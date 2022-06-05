@@ -1,0 +1,237 @@
+
+
+/* --------- template header & footer ---------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background-type.png);
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+header img {
+    width: 10.5vw;
+    margin-left: 2vw;
+    position: absolute;
+    z-index: 2;
+}
+
+.networks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px
+}
+
+.networks div {
+    display: flex;
+    justify-content: space-around;
+    width: 12vw;
+}
+
+.networks a {
+    color: #6c416c;
+}
+
+.networks nav {
+    width: 30vw;
+}
+
+.networks nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: .7vw;
+    margin: 0;
+}
+
+#navbarScroll {
+    justify-content: flex-end;
+}
+
+.flexnav {
+    margin-right: 2vw
+}
+
+.navbar-nav {
+    --bs-scroll-height: 100px; font-size: .9vw
+}
+
+.d-flex {
+    margin: 0;
+}
+
+footer {
+    background-color: #fafafa;
+    padding: 25px;
+}
+
+footer .row {
+    justify-content: space-between;
+}
+
+footer ul {
+    font-weight: lighter;
+    list-style: none;
+}
+
+.footer_title {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+footer a:hover {
+    color: #6c416c;
+    font-weight: normal;
+}
+
+/* --------- page d'accueil ---------- */
+
+.accueil section {
+    margin: 75px auto;
+    justify-content: space-around;
+}
+
+.accueil section article {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 50px;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.alaUne {
+    color: lightgray;
+    border-bottom: solid lightgrey 1px;
+    font-size: .8vw;
+}
+
+.accueil section article h1 {
+    color: #6c416c;
+}
+
+.accueil section article hr {
+    margin: 50px 0;
+}
+
+.article_alternance {
+    display: flex;
+    flex-direction: row;
+}
+
+.article_alternance img {
+    width: 50%;
+    margin-right: 25px;
+}
+
+.article_alternance div {
+    display: flex;
+    flex-direction: column;
+}
+
+.article_alternance div span {
+    color: #6c416c;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+}
+
+.eventsrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.eventsrow img {
+    width: 50%;
+    margin: 0 25px 25px 0;
+}
+
+.eventscolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.events i {
+    color: #6c416c
+}
+
+.accueil section aside {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.accueil section aside div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 55%;
+    justify-content: space-between;
+}
+
+.accueil section aside img {
+    width: 100%;
+}
+
+.accueil section aside i {
+    color: #6c416c;
+}
+
+/* --------- départements ---------- */
+
+.breadcrumbnav {
+    --bs-breadcrumb-divider: '>';
+    margin: 10px 2vw;
+    font-size: .8vw
+}
+
+.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb .active {
+    color: #6c416c;
+}
+
+.deptstitle {
+    margin: 75px auto;
+}
+
+.deptstitle h1 {
+    color: #6c416c;
+}
+
+.depts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.depts .col-3 {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 22vw;
+    margin-bottom: 50px;
+}
+
+.depts img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.deptsinfos {
+    font-size: .8vw;
+}

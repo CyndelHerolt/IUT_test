@@ -19,27 +19,27 @@ class IUTinfos extends AbstractController
             [
                 'titre' => 'Rénovation énergétique de l\'IUT',
                 'date' => '20/05/2022',
-                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-Actu-renovationenergetique2022.jpg' //image à remplacer
+                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-Actu-renovationenergetique2022.jpg'
             ],
             [
                 'titre' => 'Afterwork GMP & futur Job Dating',
                 'date' => '18/05/2022',
-                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-afterworkGMP-mai2022.jpg' //image à remplacer
+                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-afterworkGMP-mai2022.jpg'
             ],
             [
                 'titre' => 'L4M : Recrutements Experts',
                 'date' => '16/05/2022',
-                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-salonL4M-juin2022.jpg' //image à remplacer
+                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-salonL4M-juin2022.jpg'
             ],
             [
                 'titre' => 'CROUS : ateliers d\'éloquence',
                 'date' => '27/04/2022',
-                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-Atelierseloquences-CROUS2022.jpg' //image à remplacer
+                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-Atelierseloquences-CROUS2022.jpg'
             ],
             [
                 'titre' => 'Vacances de Printemps : fermeture de l\'IUT',
                 'date' => '08/04/2022',
-                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-vacancesprintemps.jpg' //image à remplacer
+                'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-vacancesprintemps.jpg'
             ],
         ];
 
@@ -83,7 +83,7 @@ class IUTinfos extends AbstractController
                 'nom' => 'Métiers du Multimédia et de l\'internet',
                 'sigle' => 'MMI',
                 'couleur' => '#3e748f',
-                'logo' => 'https://www.iut-troyes.univ-reims.fr/assets/img/logo_191.jpg',//image à remplacer
+                'logo' => 'https://www.iut-troyes.univ-reims.fr/assets/img/logo_191.jpg',
                 'presentation' => 'Le département Métiers de l’Internet et du Multimédia (anciennement Services et Réseaux de Communication) forme les acteurs de l’Internet, des médias numériques, de la communication plurimédia, de la création graphique.',
                 'responsable' => 'Florent Libbrecht',
                 'mail_responsable' => 'florent.libbrecht@univ-reims.fr',
@@ -93,7 +93,7 @@ class IUTinfos extends AbstractController
                 'nom' => 'Gestion des Entreprises et des Administrations',
                 'sigle' => 'GEA',
                 'couleur' => '#3e8f6b',
-                'logo' => 'https://www.iut-troyes.univ-reims.fr/assets/img/logo_192.jpg',//image à remplacer
+                'logo' => 'https://www.iut-troyes.univ-reims.fr/assets/img/logo_192.jpg',
                 'presentation' => 'Le département Gestion des Entreprises et des Administrations de l’IUT de Troyes forme les étudiants à la gestion d’une entreprise ou d’une administration dans différents aspects comme la gestion comptable, financière, gestion des ressources humaines, gestion juridique et fiscale, etc…',
                 'responsable' => 'Damien Blaise',
                 'mail_responsable' => 'damien.blaise@univ-reims.fr',
@@ -103,7 +103,7 @@ class IUTinfos extends AbstractController
                 'nom' => 'Carrière Juridique',
                 'sigle' => 'CJ',
                 'couleur' => '#ee4949',
-                'logo' => 'https://www.iut-troyes.univ-reims.fr/assets/img/logo_196.jpg',//image à remplacer
+                'logo' => 'https://www.iut-troyes.univ-reims.fr/assets/img/logo_196.jpg',
                 'presentation' => 'Le département Carrières Juridiques prépare les étudiants à devenir des techniciens du droit dans des domaines variés : études de notaires, d’huissiers mais aussi des cabinets d’expert-comptable ou des services de ressources humaines.',
                 'responsable' => 'Gilles Darmon',
                 'mail_responsable' => 'gilles.darmon@univ-reims.fr',

@@ -32,12 +32,14 @@
                 <hr>
 
                 <div class="events">
+                    <!-- lecture du tableau et itérations -->
                     {% for key in events %}
                         <div class="eventsrow">
                             <img src="{{ key.image }}" alt="miniature évènements">
                             <div class="enventscolumn">
                                 <h4>{{ key.titre }}</h4>
                                 <p><i class="fa-solid fa-calendar-days"></i>  {{ key.date }}</p>
+                                <button type="button" class="btn btn-warning">En savoir plus</button>
                             </div>
                         </div>
                     {% endfor %}
@@ -52,7 +54,7 @@
                 </div>
 
                 <hr>
-
+                <!-- lecture du tableau et itérations -->
                 {% for key in news %}
                     <h4>{{ key.titre }}</h4>
                     <img src="{{ key.image }}" alt="oups">
@@ -60,6 +62,8 @@
                     <hr>
                 {% endfor %}
             </aside>
+
+
         </section>
     </div>
 

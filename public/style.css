@@ -78,6 +78,7 @@ footer .row {
 footer ul {
     font-weight: lighter;
     list-style: none;
+    padding: 0;
 }
 
 .footer_title {
@@ -93,6 +94,16 @@ footer a {
 footer a:hover {
     color: #6c416c;
     font-weight: normal;
+}
+
+footer img {
+    background-color: #6c416c;
+    width: 100px;
+    opacity: .8;
+}
+
+footer img:hover {
+    opacity: 1;
 }
 
 /* --------- page d'accueil ---------- */

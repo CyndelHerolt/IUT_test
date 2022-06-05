@@ -30,7 +30,22 @@
                         </div>
                     </div>
 
+                    <hr style="margin: 50px 0">
+
+                    <div style="display: flex; flex-direction: column">
+                        {% for key in events %}
+                        <div style="display: flex; flex-direction: row">
+                            <img src="{{ key.image }}" alt="" style="width: 50%; margin: 0 25px 25px 0">
+                            <div style="display: flex; flex-direction: column">
+                            <h4>{{ key.titre }}</h4>
+                                <p><i class="fa-solid fa-calendar-days" style="color: #6c416c"></i>  {{ key.date }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div> 
+                    
                 </article>
+                
                 <aside class="col-4" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; padding: 50px; border-radius: 20px; backdrop-filter: blur(5px)">
                     <div style="display: flex; flex-direction: row; align-items: center; width: 55%; justify-content: space-between;">
                         <i class="fa-solid fa-newspaper fa-xl"></i>
@@ -42,7 +57,7 @@
                     {% for key in news %}
                         <h4>{{ key.titre }}</h4>
                         <img src="{{ key.image }}" alt="oups" style="width: 100%">
-                        <p>{{ key.date }}</p>
+                        <p><i class="fa-solid fa-calendar-days" style="color: #6c416c"></i>  {{ key.date }}</p>
                         <hr>
                     {% endfor %}
                 </aside>

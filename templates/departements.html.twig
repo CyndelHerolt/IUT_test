@@ -16,28 +16,23 @@
         </section>
     </div>
 
-    <div class="container">
-        <section>
-
+        <section class="container col-12" style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap;">
             {% for key in depts %}
-                <article class="row col-12" style="margin: 75px auto;box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; padding: 20px; border-radius: 20px; height: fit-content;backdrop-filter: blur(5px)">
-                    <div class="col-9" style="display: flex; align-items: center;">
-                        <img src="{{ key.logo }}" alt="Oups" style="width: 9vw; border-right: solid 1px; padding-right: 10px">
-                        <div style="display: flex; flex-direction: column; margin-left: 20px">
-                            <h5>{{ key.nom }} | {{ key.sigle }}</h5>
-                            <p>{{ key.presentation }}</p>
+                <div class="card col-3" style=" box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; width: 22vw; margin-bottom: 50px">
+                    <img src="{{ key.logo }}" alt="Oups" style="width: 50%; margin: 0 auto; border-bottom: solid {{ key.couleur }}">
+                    <div class="card-body">
+                        <h5 class="card-text">{{ key.nom }} | <strong style="color: {{ key.couleur }}">{{ key.sigle }}</strong></h5>
+                        <p class="card-text">{{ key.presentation }}</p>
+                        <button type="button" class="btn btn-warning">Découvrir</button>
+                        <hr>
+                        <div class="card-text" style="font-size: .8vw">
+                            <p>Responsable : <strong>{{ key.responsable }}</strong></p>
+                            <p>{{ key.mail_responsable }}</p>
+                            <p>{{ key.tel_responsable }}</p>
                         </div>
                     </div>
-                    <div class="col-3" style="display: flex; flex-direction: column; border-left: solid 1px; padding-left: 20px;">
-                        <p>Responsable : <strong>{{ key.responsable }}</strong></p>
-                        <p>{{ key.mail_responsable }}</p>
-                        <p>{{ key.tel_responsable }}</p>
-                    </div>
-                </article>
-
-
+                </div>
             {% endfor %}
         </section>
-    </div>
 
 {% endblock %}

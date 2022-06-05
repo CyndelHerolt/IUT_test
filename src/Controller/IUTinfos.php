@@ -87,7 +87,8 @@ class IUTinfos extends AbstractController
                 'presentation' => 'Le département Métiers de l’Internet et du Multimédia (anciennement Services et Réseaux de Communication) forme les acteurs de l’Internet, des médias numériques, de la communication plurimédia, de la création graphique.',
                 'responsable' => 'Florent Libbrecht',
                 'mail_responsable' => 'florent.libbrecht@univ-reims.fr',
-                'tel_responsable' => '03 25 42 71 60'
+                'tel_responsable' => '03 25 42 71 60',
+                'lien_page_description' => ''
             ],
             [
                 'nom' => 'Gestion des Entreprises et des Administrations',
@@ -97,7 +98,8 @@ class IUTinfos extends AbstractController
                 'presentation' => 'Le département Gestion des Entreprises et des Administrations de l’IUT de Troyes forme les étudiants à la gestion d’une entreprise ou d’une administration dans différents aspects comme la gestion comptable, financière, gestion des ressources humaines, gestion juridique et fiscale, etc…',
                 'responsable' => 'Damien Blaise',
                 'mail_responsable' => 'damien.blaise@univ-reims.fr',
-                'tel_responsable' => '03 25 42 70 92'
+                'tel_responsable' => '03 25 42 70 92',
+                'lien_page_description' => ''
             ],
             [
                 'nom' => 'Carrière Juridique',
@@ -107,7 +109,8 @@ class IUTinfos extends AbstractController
                 'presentation' => 'Le département Carrières Juridiques prépare les étudiants à devenir des techniciens du droit dans des domaines variés : études de notaires, d’huissiers mais aussi des cabinets d’expert-comptable ou des services de ressources humaines.',
                 'responsable' => 'Gilles Darmon',
                 'mail_responsable' => 'gilles.darmon@univ-reims.fr',
-                'tel_responsable' => '03 25 42 71 73'
+                'tel_responsable' => '03 25 42 71 73',
+                'lien_page_description' => ''
             ],
             [
                 'nom' => 'Genie Mécanique et Productique',
@@ -117,7 +120,8 @@ class IUTinfos extends AbstractController
                 'presentation' => 'Le département Génie Mécanique et Productique de l’IUT de Troyes a pour vocation de former des techniciens généralistes capables d’assurer le cycle de vie d’un produit industriel, de sa conception à sa mise en production.',
                 'responsable' => 'Claire Barritault',
                 'mail_responsable' => 'claire.barritault@univ-reims.fr',
-                'tel_responsable' => '03 25 42 46 23'
+                'tel_responsable' => '03 25 42 46 23',
+                'lien_page_description' => ''
             ],
             [
                 'nom' => 'Genie Electrique et Informatique Industrielle',
@@ -127,7 +131,8 @@ class IUTinfos extends AbstractController
                 'presentation' => 'Le département Génie électrique et informatique industrielle (GEII) de l’IUT de Troyes forme les étudiants aux métiers liés à la gestion de l’énergie électrique, l’informatique industriel, l’électronique ou encore l’automatisme.',
                 'responsable' => 'Frédéric Morain-Nicolier',
                 'mail_responsable' => 'frederic.nicolier@univ-reims.fr',
-                'tel_responsable' => '03 25 42 71 24'
+                'tel_responsable' => '03 25 42 71 24',
+                'lien_page_description' => ''
             ],
             [
                 'nom' => 'Techniques de Commercialisation',
@@ -137,7 +142,8 @@ class IUTinfos extends AbstractController
                 'presentation' => 'Le département Techniques de Commercialisation (TC) de l’IUT de Troyes forme les étudiants aux métiers liés au commerce et au marketing dans des secteurs variés : banque, grande distribution, assurances, etc...',
                 'responsable' => 'Amanda Didier',
                 'mail_responsable' => 'amanda.didier@univ-reims.fr',
-                'tel_responsable' => '03 25 42 46 24'
+                'tel_responsable' => '03 25 42 46 24',
+                'lien_page_description' => ''
             ],
             [
                 'nom' => 'Formation Continue',
@@ -147,7 +153,8 @@ class IUTinfos extends AbstractController
                 'presentation' => 'Ce type de formation concerne ceux qui sont rentrés dans la vie active et ont donc quitté la formation initiale (études). Elle permet aux personnes qui sont déjà dans la vie active de pouvoir continuer à se former pour améliorer leurs compétences et de s\'adapter aux nouvelles technologies, pratiques ou méthodes appliqués en entreprise. Elle permet également la reconversion professionnelle.',
                 'responsable' => 'Département de la Formation Continue',
                 'mail_responsable' => '',
-                'tel_responsable' => ''
+                'tel_responsable' => '',
+                'lien_page_description' => ''
             ]
         ];
 

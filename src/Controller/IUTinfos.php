@@ -66,7 +66,7 @@ class IUTinfos extends AbstractController
         ];
 
         return $this->render(
-            'number.html.twig',
+            'index.html.twig',
             [
                 'news' => $actualites,
                 'events' => $evenements,

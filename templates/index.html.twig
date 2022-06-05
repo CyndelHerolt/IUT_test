@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="container accueil">
+        <section class="row  col-12">
+            <article class="col-7">
+                <p class="alaUne">A la Une</p>
+                <h1>Bachelor Universitaire de Technologie</h1>
+                <h4>A partir de 2021, l'offre de formation des IUT évolue !</h4>
+                <h6>Le D.U.T laisse sa place à un tout nouveau système de formation appelé <strong>B.U.T</strong></h6>
+                <p>Un parcours intégré en 3 ans, sans sélection supplémentaire pour atteindre le grade <strong>licence</strong>. Le nouveau diplôme s’aligne sur les standards internationaux et facilite les échanges avec les universités étrangères.
+                    Tout comme le DUT, cette formation est exclusive aux IUT et sélective à l’entrée. Les <strong>B.U.T</strong> sont définis par leurs 24 spécialités. Elles s’appuieront toujours sur des programmes nationaux avec des adaptations locales.</p>
+                <button type="button" class="btn btn-warning">En savoir plus</button>
+
+                <hr>
+
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/b9rnrY7mIPs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <hr>
+
+                <div class="article_alternance">
+                    <img src="{{ asset ('images/alternance.jpg') }}" alt="Oups">
+                    <div>
+                        <h2>Recrutez vos futurs alternants en B.U.T</h2>
+                        <p>L’IUT de Troyes s’engage depuis 50 ans à offrir un enseignement de qualité, en adéquation avec les besoins du monde professionnel, avec notamment la mise en place du Bachelor Universitaire de Technologie.
+                            <br><span>Bonne nouvelle, bénéficiez de la prime d'état de 8000€ pour tout contrat d'apprentissage signé désormais avant le 30 décembre 2022.</span></p>
+                        <a href="https://bit.ly/3wDTIN9" target="_blank"><button type="button" class="btn btn-warning" style="width: 100%">Télecharger la brochure</button></a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="events">
+                    {% for key in events %}
+                        <div class="eventsrow">
+                            <img src="{{ key.image }}" alt="miniature évènements">
+                            <div class="enventscolumn">
+                                <h4>{{ key.titre }}</h4>
+                                <p><i class="fa-solid fa-calendar-days"></i>  {{ key.date }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+            </article>
+
+            <aside class="col-4">
+                <div>
+                    <i class="fa-solid fa-newspaper fa-xl"></i>
+                    <h3>Actualités</h3>
+                </div>
+
+                <hr>
+
+                {% for key in news %}
+                    <h4>{{ key.titre }}</h4>
+                    <img src="{{ key.image }}" alt="oups">
+                    <p><i class="fa-solid fa-calendar-days"></i>  {{ key.date }}</p>
+                    <hr>
+                {% endfor %}
+            </aside>
+        </section>
+    </div>
+
+{% endblock %}
+

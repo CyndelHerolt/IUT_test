@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+
     <nav class="breadcrumbnav" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/IUT/accueil">Accueil</a></li>
@@ -16,23 +17,27 @@
         </div>
     </div>
 
-        <section class="container col-12 depts">
-            {% for key in depts %}
-                <div class="card col-3">
-                    <img src="{{ key.logo }}" alt="Oups" style="border-bottom: solid {{ key.couleur }}">
-                    <div class="card-body">
-                        <h5 class="card-text">{{ key.nom }} | <strong style="color: {{ key.couleur }}">{{ key.sigle }}</strong></h5>
-                        <p class="card-text">{{ key.presentation }}</p>
-                        <button type="button" class="btn btn-warning">Découvrir</button>
-                        <hr>
-                        <div class="card-text deptsinfos">
-                            <p>Responsable : <strong>{{ key.responsable }}</strong></p>
-                            <p>{{ key.mail_responsable }}</p>
-                            <p>{{ key.tel_responsable }}</p>
-                        </div>
+    <section class="container col-12 depts">
+
+        {% for key in depts %}
+
+            <div class="card col-3">
+                <img src="{{ key.logo }}" alt="Oups" style="border-bottom: solid {{ key.couleur }}">
+                <div class="card-body">
+                    <h5 class="card-text">{{ key.nom }} | <strong style="color: {{ key.couleur }}">{{ key.sigle }}</strong></h5>
+                    <p class="card-text">{{ key.presentation }}</p>
+                    <button type="button" class="btn btn-warning">Découvrir</button>
+                    <hr>
+                    <div class="card-text deptsinfos">
+                        <p>Responsable : <strong>{{ key.responsable }}</strong></p>
+                        <p>{{ key.mail_responsable }}</p>
+                        <p>{{ key.tel_responsable }}</p>
                     </div>
                 </div>
-            {% endfor %}
-        </section>
+            </div>
+
+        {% endfor %}
+
+    </section>
 
 {% endblock %}

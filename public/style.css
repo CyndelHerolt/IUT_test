@@ -106,6 +106,10 @@ footer img:hover {
     opacity: 1;
 }
 
+.liens {
+    font-size: .8vw;
+}
+
 /* --------- page d'accueil ---------- */
 
 .accueil section {

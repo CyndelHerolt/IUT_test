@@ -2,9 +2,9 @@
 
 # the "app_lucky_number" route name is not important yet
 iut_test_technique:
-    path: /IUT/accueil
+    path: /
     controller: App\Controller\IUTinfos::News
 
 iut_dept:
-    path: /IUT/departements
+    path: /departements
     controller: App\Controller\IUTinfos::Depts

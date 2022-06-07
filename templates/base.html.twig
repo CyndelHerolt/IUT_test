@@ -19,7 +19,7 @@
 <body>
 
 <header>
-    <a href="/IUT/accueil"><img src="{{ asset ('images/IUT.png') }}" alt="Logo"></a>
+    <a href="{{ path ('iut_test_technique') }}"><img src="{{ asset ('images/IUT.png') }}" alt="Logo"></a>
     <div class="networks">
         <div>
             <a href="https://www.facebook.com/IUT10/" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
@@ -30,7 +30,7 @@
             <a href="https://www.flickr.com/photos/138201145@N07/" target="_blank"><i class="fa-brands fa-flickr fa-lg"></i></a>
         </div>
         <nav>
-            <ul>
+            <ul class="extralinks">
                 <a href="https://intranetv3.iut-troyes.univ-reims.fr/" target="_blank"><li>Intranet</li></a>
                 <a href="https://ebureau.univ-reims.fr/" target="_blank"><li>Bureau Virtuel</li></a>
                 <a href="https://roundcube.univ-reims.fr/" target="_blank"><li>Messagerie</li></a>
@@ -48,7 +48,7 @@
                 <div class="flexnav">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/IUT/accueil">Accueil</a>
+                            <a class="nav-link" aria-current="page" href="{{ path ('iut_test_technique') }}">Accueil</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -57,7 +57,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
                                 <li><a class="dropdown-item" href="#">Actualités</a></li>
                                 <li><a class="dropdown-item" href="#">L'IUT en chiffres</a></li>
-                                <li><a class="dropdown-item" href="/IUT/departements">Départements</a></li>
+                                <li><a class="dropdown-item" href="{{ path ('iut_dept') }}">Départements</a></li>
                                 <li><a class="dropdown-item" href="#">Organigramme</a></li>
                                 <li><a class="dropdown-item" href="#">Revue de presse</a></li>
                                 <li><a class="dropdown-item" href="#">Rapport d'activité</a></li>
@@ -139,8 +139,8 @@
                     </ul>
                 </div>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Explorer</button>
                 </form>
             </div>
         </div>
@@ -169,7 +169,7 @@
                 <div class="col-2">
                     <ul>
                         <li class="footer_title">L'IUT de Troyes</li>
-                        <li><a href="/IUT/departements">Départements</a></li>
+                        <li><a href="{{ path ('iut_dept') }}">Départements</a></li>
                         <li><a href="">Formations</a></li>
                         <li><a href="">Entreprises</a></li>
                         <li><a href="">Vie étudiante</a></li>

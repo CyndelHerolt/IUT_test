@@ -19,10 +19,4 @@ I also installed the Symfony Support pluggin on PHPStorm.
 
 <h2>Project structure discovery on PHPStorm</h2>
 
-
-
-
-
-
-
-
+At first, this new environment was quite scary as it is unlike anything I have done before. But the Symfony docs helped me to understand the route and controller system.

@@ -7,12 +7,17 @@ The instructions were to create a home page as well as a "departments" page usin
 
 <h2>Start the project by installing Symfony</h2>
 
-I started by installing Symfony CLI -using a package manager- to create the project and work on it locally, then I checked if everything was OK -indeed it was-. 
+I started by installing Symfony CLI and Profiler -using a package manager- to create the project and work on it locally, then I checked if everything was OK -indeed it was-. 
 
 <code>
-symfony new IUT_test  <br>
-cd C:/MAMP/localweb/IUT_test <br>
-symfony server:start <br>
+    
+</code>
+  composer require --dev symfony/profiler-pack
+<code>
+  
+  symfony new IUT_test  <br>
+  cd C:/MAMP/localweb/IUT_test <br>
+  symfony server:start <br>
 </code>
 
 I also installed the Symfony Support pluggin on PHPStorm.

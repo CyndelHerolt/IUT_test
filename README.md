@@ -31,4 +31,4 @@ At first, this new environment was quite scary as it is unlike anything I have d
 
 <h3>Use table data</h3>
 
-Part of the content of the project had to be extracted from arrays ; so I looped over each item using <code>{% for key in arrayname %}</code>
+Part of the content of the project had to be extracted from arrays ; so I looped over each item using <code>{% for key in arrayname %}</code> I was surprised that it wasn't a <code>foreach</code> like PHP.

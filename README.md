@@ -36,3 +36,8 @@ Part of the content of the project had to be extracted from arrays ; so I looped
 <h3>Define path</h3>
 
 I defined my links paths using <code>{{ path ('name_in_routes') }}</code> and the image integration path using <code>{{ asset ('image_directory/image_name.jpg') }}</code>
+
+<h3>Create the layout</h3>
+
+To bring a bit of **modernity** to the current IUT website, I decided to get rid of the dark gray color and big content blocks to let the layout breathe.
+I used Content Delivery Network **FontAwesome** for the icons and the **Bootstrap** library to organize the content.

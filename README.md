@@ -35,4 +35,4 @@ Part of the content of the project had to be extracted from arrays ; so I looped
 
 <h3>Define path</h3>
 
-I defined my links paths using <code>{{ path ('name_in_routes') }}</code> and the image integration path using <code><img src="{{ asset ('image_directory/image_name.jpg') }}" alt="Oups"></img>
+I defined my links paths using <code>{{ path ('name_in_routes') }}</code> and the image integration path using <code>img src="{{ asset ('image_directory/image_name.jpg') }}" alt="Oups"

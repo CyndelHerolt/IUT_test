@@ -15,9 +15,7 @@ I started by installing Symfony CLI and Profiler -using a package manager- to cr
 <br>
 <code>
   symfony new IUT_test <br>
-  
   cd C:/MAMP/localweb/IUT_test <br>
-  
   symfony server:start <br>
 </code>
 

@@ -7,7 +7,7 @@ The instructions were to create a home page as well as a "departments" page usin
 
 <h2>Start the project by installing Symfony</h2>
 
-I started by installing Symfony CLI and Profiler -using a package manager- to create the project and work on it locally, then I checked if everything was OK -indeed it was-. 
+I started by installing **Symfony CLI** and **Profiler** -using a package manager- to create the project and work on it locally, then I checked if everything was OK -*indeed it was*-. 
 
 <code>
   composer require --dev symfony/profiler-pack
@@ -27,4 +27,4 @@ I started by installing Symfony CLI and Profiler -using a package manager- to cr
 
 <h2>Project structure discovery on PHPStorm</h2>
 
-At first, this new environment was quite scary as it is unlike anything I have done before. But the Symfony docs and the Symfony Support pluggin helped me to understand the route and controller system.
+At first, this new environment was quite scary as it is unlike anything I have done before. But the **Symfony docs** and the **Symfony Support** pluggin helped me to understand the route and controller system.

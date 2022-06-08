@@ -14,9 +14,11 @@ I started by installing Symfony CLI and Profiler -using a package manager- to cr
 </code>
 <br>
 <code>
-  symfony new IUT_test <br>
-  cd C:/MAMP/localweb/IUT_test <br>
-  symfony server:start <br>
+  symfony new IUT_test
+  
+  cd C:/MAMP/localweb/IUT_test
+  
+  symfony server:start
 </code>
 
 I also installed the Symfony Support pluggin on PHPStorm.

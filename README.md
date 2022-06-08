@@ -25,8 +25,6 @@ I started by installing Symfony CLI and Profiler -using a package manager- to cr
   symfony server:start
 </code>
 
-I also installed the Symfony Support pluggin on PHPStorm.
-
 <h2>Project structure discovery on PHPStorm</h2>
 
-At first, this new environment was quite scary as it is unlike anything I have done before. But the Symfony docs helped me to understand the route and controller system.
+At first, this new environment was quite scary as it is unlike anything I have done before. But the Symfony docs and the Symfony Support pluggin helped me to understand the route and controller system.

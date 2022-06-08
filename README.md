@@ -10,7 +10,7 @@ The instructions were to create a home page as well as a "departments" page usin
 I started by installing Symfony CLI and Profiler -using a package manager- to create the project and work on it locally, then I checked if everything was OK -indeed it was-. 
 
 <code>
-    composer require --dev symfony/profiler-pack
+    composer require --dev symfony/profiler-pack <br />
 </code>
   
 <code>

@@ -3,9 +3,9 @@ Symfony Initiation
 
 This website is a technical test in order to -maybe- be recruited by my university for a work-study contract.
 It started on june 3rd and must be finished by june 10th.
-The instructions were to create a home page as well as a "departments" page using the Symfony framework -I had never used Symfony before-.
+The instructions were to create a home page as well as a "departments" page using the Symfony framework -*I had never used Symfony before*-.
 
-<h2>Start the project by installing Symfony</h2>
+<h3>Start the project by installing Symfony</h3>
 
 I started by installing **Symfony CLI** and **Profiler** -using a package manager- to create the project and work on it locally, then I checked if everything was OK -*indeed it was*-. 
 
@@ -25,6 +25,10 @@ I started by installing **Symfony CLI** and **Profiler** -using a package manage
   symfony server:start
 </code>
 
-<h2>Project structure discovery on PHPStorm</h2>
+<h3>Project structure discovery on PHPStorm</h3>
 
 At first, this new environment was quite scary as it is unlike anything I have done before. But the **Symfony docs** and the **Symfony Support** pluggin helped me to understand the route and controller system.
+
+<h3>Use table data</h3>
+
+Part of the content of the project had to be extracted from arrays ; so I looped over each item using <code>{% for key in arrayname %}</code>

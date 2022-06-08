@@ -13,11 +13,11 @@ I started by installing Symfony CLI and Profiler -using a package manager- to cr
   composer require --dev symfony/profiler-pack
 </code>
 <br>
-<code>
-  symfony new IUT_test
-  cd C:/MAMP/localweb/IUT_test
-  symfony server:start
-</code>
+```
+symfony new IUT_test
+cd C:/MAMP/localweb/IUT_test
+symfony server:start
+```
 
 I also installed the Symfony Support pluggin on PHPStorm.
 

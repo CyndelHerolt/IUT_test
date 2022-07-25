@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Routing\Annotation\Route;
+
 
 class IUTinfos extends AbstractController
 {
@@ -165,4 +165,48 @@ class IUTinfos extends AbstractController
             ]
         );
     }
+
+
+function Actu()
+{
+    $actualites =  [
+        [
+            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-fermestivale-2022.jpg',
+            'titre' => 'Fermeture estivale 2022',
+            'date' => '20/07/2022',
+            'lien_page_description' => ''
+        ],
+        [
+            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-inscriptions-rentree2022.jpg',
+            'titre' => 'Campagne d\'inscription - Rentrée 2022',
+            'date' => '06/07/2022',
+            'lien_page_description' => ''
+        ],
+        [
+            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-Actu-rentree2022.jpg',
+            'titre' => 'Dates rentrée 2022',
+            'date' => '01/07/2022',
+            'lien_page_description' => ''
+        ],
+        [
+            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-fermestivale-2022.jpg',
+            'titre' => 'Fermeture estivale 2022',
+            'date' => '20/07/2022',
+            'lien_page_description' => ''
+        ],
+        [
+            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-fermestivale-2022.jpg',
+            'titre' => 'Fermeture estivale 2022',
+            'date' => '20/07/2022',
+            'lien_page_description' => ''
+        ],
+    ];
+
+    return $this->render(
+        'actualites.html.twig',
+        [
+            'actu' => $actualites,
+        ]
+    );
+}
 }

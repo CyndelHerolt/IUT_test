@@ -55,7 +55,7 @@
                                 L'IUT
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Actualités</a></li>
+                                <li><a class="dropdown-item" href="{{ path ('iut_actu') }}">Actualités</a></li>
                                 <li><a class="dropdown-item" href="#">L'IUT en chiffres</a></li>
                                 <li><a class="dropdown-item" href="{{ path ('iut_dept') }}">Départements</a></li>
                                 <li><a class="dropdown-item" href="#">Organigramme</a></li>
@@ -138,10 +138,12 @@
                         </li>
                     </ul>
                 </div>
+                <!--
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
                     <button class="btn btn-outline-warning" type="submit">Explorer</button>
                 </form>
+                -->
             </div>
         </div>
     </nav>

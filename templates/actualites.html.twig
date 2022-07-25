@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <nav class="breadcrumbnav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ path ('iut_test_technique') }}">Accueil</a></li>
+            <li class="breadcrumb-item"><a href="#">L'IUT</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Actualités</li>
+        </ol>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row col-12 deptstitle">
+            <h1>Actualités</h1>
+        </div>
+
+    <section class="row col-12 actu">
+
+        {% for key in actu %}
+
+            <div class="card card_actu col-4">
+                <img src="{{ key.image }}" alt="Oups">
+                <div class="card-body">
+                    <h2 class="card-text">{{ key.titre }}</h2>
+                    <p class="card-text"><i class="fa-solid fa-calendar-days"></i>  {{ key.date }}</p>
+                </div>
+                <button type="button" class="btn btn-warning">Découvrir</button>
+            </div>
+
+        {% endfor %}
+
+    </section>
+    </div>
+
+{% endblock %}

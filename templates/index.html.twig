@@ -2,16 +2,16 @@
 
 {% block body %}
 
-    <div class="container accueil">
+    <div class="container-fluid accueil">
         <section class="row  col-12">
             <article class="col-7">
                 <p class="alaUne">A la Une</p>
                 <h1>Bachelor Universitaire de Technologie</h1>
-                <h4>A partir de 2021, l'offre de formation des IUT évolue !</h4>
-                <h6>Le D.U.T laisse sa place à un tout nouveau système de formation appelé <strong>B.U.T</strong></h6>
-                <p>Un parcours intégré en 3 ans, sans sélection supplémentaire pour atteindre le grade <strong>licence</strong>. Le nouveau diplôme s’aligne sur les standards internationaux et facilite les échanges avec les universités étrangères.
+                <h2>A partir de 2021, l'offre de formation des IUT évolue !</h2>
+                <p>Le D.U.T laisse sa place à un tout nouveau système de formation appelé <strong>B.U.T.</strong> <br/>
+                Un parcours intégré en 3 ans, sans sélection supplémentaire pour atteindre le grade <strong>licence</strong>. Le nouveau diplôme s’aligne sur les standards internationaux et facilite les échanges avec les universités étrangères.
                     Tout comme le DUT, cette formation est exclusive aux IUT et sélective à l’entrée. Les <strong>B.U.T</strong> sont définis par leurs 24 spécialités. Elles s’appuieront toujours sur des programmes nationaux avec des adaptations locales.</p>
-                <button type="button" class="btn btn-warning">En savoir plus</button>
+                <a href=""><button type="button" class="btn btn-warning">En savoir plus</button></a>
 
                 <hr>
 
@@ -60,6 +60,7 @@
                     <p><i class="fa-solid fa-calendar-days"></i>  {{ key.date }}</p>
                     <hr>
                 {% endfor %}
+                <button type="button" class="btn btn-warning">Plus d'actualités</button>
             </aside>
 
 

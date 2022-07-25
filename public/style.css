@@ -12,8 +12,12 @@ body {
     background-attachment: fixed;
 }
 
+.container-fluid {
+    width: 85vw;
+}
+
 header img {
-    width: 10.5vw;
+    height: 105px;
     margin-left: 2vw;
     position: absolute;
     z-index: 2;
@@ -63,7 +67,7 @@ header img {
 }
 */
 #navbarScroll {
-    justify-content: flex-end;
+    margin-left: 10vw;
 }
 
 .flexnav {
@@ -176,6 +180,10 @@ footer img:hover {
     color: #6c416c;
 }
 
+.accueil section article h2 {
+    font-size: 1.5vw;
+}
+
 .accueil section article hr {
     margin: 50px 0;
 }
@@ -267,25 +275,75 @@ footer img:hover {
     color: #6c416c;
 }
 
-.depts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.deptstitle h2 {
+    font-size: 1.5vw;
 }
 
-.depts .col-3 {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    width: 22vw;
-    margin-bottom: 50px;
-    border-radius: 20px;
+.depts h3 {
+    font-size: 1.5vw;
+}
+
+.depts_title {
+    display: flex;
+    align-items: center;
 }
 
 .depts img {
-    width: 50%;
-    margin: 0 auto;
+    width: 100px;
+    margin: 0 30px;
 }
 
-.deptsinfos {
-    font-size: .8vw;
+.depts article {
+    box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+    padding: 10px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    margin-bottom: 50px;
+}
+
+.depts .descript_flex {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.depts .descript_flex p {
+    width: 60vw;
+}
+
+.depts .descript_flex .btn {
+    height: 50px;
+}
+
+/* --------- actualites ---------- */
+
+.actu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.card_actu {
+    width: 25vw;
+    box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+}
+
+.actu h2 {
+    font-size: 1.5vw;
+}
+
+.actu i {
+    color: #6c416c;
+}
+
+.actu .btn-warning {
+    border-radius: 15px;
+    width: 100%;
 }

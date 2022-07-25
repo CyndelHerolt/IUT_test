@@ -1,6 +1,5 @@
 # config/routes.yaml
 
-# the "app_lucky_number" route name is not important yet
 iut_test_technique:
     path: /
     controller: App\Controller\IUTinfos::News
@@ -8,3 +7,7 @@ iut_test_technique:
 iut_dept:
     path: /departements
     controller: App\Controller\IUTinfos::Depts
+
+iut_actu:
+    path: /actualites
+    controller: App\Controller\IUTinfos::Actu

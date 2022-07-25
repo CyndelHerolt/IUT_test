@@ -41,3 +41,5 @@ I defined my links paths using <code>{{ path ('name_in_routes') }}</code> and th
 
 To bring a bit of **modernity** to the current IUT website, I decided to get rid of the dark gray color and big content blocks to let the layout breathe.
 I used Content Delivery Network **FontAwesome** for the icons and the **Bootstrap** library to organize the content.
+
+**due to an unknown error on my VPS, the online release is delayed**

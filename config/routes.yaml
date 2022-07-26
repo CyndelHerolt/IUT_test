@@ -11,3 +11,11 @@ iut_dept:
 iut_actu:
     path: /actualites
     controller: App\Controller\IUTinfos::Actu
+
+iut_chiffres:
+    path: /l'iut_en_chiffres
+    controller: App\Controller\IUTinfos::Chiffres
+
+iut_organigramme:
+    path: /organigramme
+    controller: App\Controller\IUTinfos::Orga

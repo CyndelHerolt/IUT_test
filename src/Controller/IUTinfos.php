@@ -189,15 +189,21 @@ function Actu()
             'lien_page_description' => ''
         ],
         [
-            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-fermestivale-2022.jpg',
-            'titre' => 'Fermeture estivale 2022',
-            'date' => '20/07/2022',
+            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-geii-prixconcoursEEA-2022.jpg',
+            'titre' => 'Premier prix du concours EEA 2022',
+            'date' => '27/06/2022',
             'lien_page_description' => ''
         ],
         [
-            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-fermestivale-2022.jpg',
-            'titre' => 'Fermeture estivale 2022',
-            'date' => '20/07/2022',
+            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-Actu-cafeparentsjuin2022.jpg',
+            'titre' => 'Premiers pas à l\'université : café des parents',
+            'date' => '08/06/2022',
+            'lien_page_description' => ''
+        ],
+        [
+            'image' => 'https://www.iut-troyes.univ-reims.fr/media/images/2022/Visuel-Actu-concoursEEA2022.jpg',
+            'titre' => 'Finale concours EEA 2022',
+            'date' => '01/06/2022',
             'lien_page_description' => ''
         ],
     ];
@@ -209,4 +215,267 @@ function Actu()
         ]
     );
 }
+
+    function Chiffres()
+    {
+        $liutenchiffres =  [
+            [
+                'nombre' => '1544',
+                'intitulé' => 'Etudiant.es et stagiaires',
+            ],
+            [
+                'nombre' => '857',
+                'intitulé' => 'Diplômé.es chaque année',
+            ],
+            [
+                'nombre' => '88',
+                'intitulé' => 'Enseignant.es en poste',
+            ],
+            [
+                'nombre' => '44',
+                'intitulé' => 'personnels administratifs et techniques',
+            ],
+            [
+                'nombre' => '192',
+                'intitulé' => 'Intervenants professionnels',
+            ],
+            [
+                'nombre' => '6',
+                'intitulé' => 'B.U.T dispensés',
+            ],
+            [
+                'nombre' => '9',
+                'intitulé' => 'Licences professionnelles',
+            ],
+            [
+                'nombre' => '1',
+                'intitulé' => 'Service de formation continue certifié ISO 9001',
+            ],
+            [
+                'nombre' => '3',
+                'intitulé' => 'Laboratoires de recherche',
+            ],
+            [
+                'nombre' => '21999',
+                'intitulé' => 'Mètres carré de bâtiments',
+            ],
+            [
+                'nombre' => '29',
+                'intitulé' => 'Universités partenaires',
+            ],
+            [
+                'nombre' => '8',
+                'intitulé' => 'Associations étudiantes',
+            ],
+        ];
+
+        return $this->render(
+            'liut_en_chiffres.html.twig',
+            [
+                'chiffres' => $liutenchiffres,
+            ]
+        );
+    }
+
+    function Orga()
+    {
+        $direction =  [
+            [
+                'poste' => 'Directeur de l\'IUT de Troyes',
+                'nom' => 'Martial Martin',
+            ],
+            [
+                'poste' => 'Président du Conseil d\'Institut',
+                'nom' => 'François Gré',
+            ],
+            [
+                'poste' => 'Directeur adjoint de l\'IUT de Troyes',
+                'nom' => 'David Annebicque',
+            ],
+            [
+                'poste' => 'Cheffe des service administratifs',
+                'nom' => 'Véronique Concil',
+            ],
+        ];
+
+        $administration =  [
+            [
+                'service' => 'Ressources Humaines',
+                'nom' => 'Patricia Lépinois',
+            ],
+            [
+                'service' => 'Comptabilité',
+                'nom' => 'Marie Kitzinger | Fanny Passemard',
+            ],
+            [
+                'service' => 'Secrétariat de Direction',
+                'nom' => 'Véronique Planson | Fanny Passemard',
+            ],
+            [
+                'service' => 'Communication',
+                'nom' => 'Véronique Concil | Michaël Tourneux',
+            ],
+            [
+                'service' => 'Culture',
+                'nom' => 'Caroline Adam',
+            ],
+        ];
+
+        $vieetudiante =  [
+            [
+                'service' => 'Accueil',
+                'nom' => 'Julia Fridel',
+            ],
+            [
+                'service' => 'Responsable vie étudiante',
+                'nom' => 'Sarah Mocquery',
+            ],
+            [
+                'service' => 'Scolarité',
+                'nom' => 'Marie-Aude Febvre',
+            ],
+            [
+                'service' => 'Relations Internationales',
+                'nom' => 'Sarah Mocquery',
+            ],
+            [
+                'service' => 'Santé',
+                'nom' => 'Nathalie Mérino',
+            ],
+        ];
+
+        $logistique =  [
+            [
+                'service' => 'Chargé d\opérations',
+                'nom' => 'Thomas Moya',
+            ],
+            [
+                'service' => 'Patrimoine, sécurité et maintenance',
+                'nom' => 'Sébastien Tupet | Francis Noirot | Pascal PELLÉ | Kevin SESTER | Julien FUGÈRE | David BOUILLOT | Thanh Tan TRAN',
+            ],
+            [
+                'service' => 'Propreté des locaux',
+                'nom' => 'Brigitte CLOCHETTE | Sylvie LEBRUN | Wuilly RANDRIANTSOA',
+            ],
+            [
+                'service' => 'Concierge',
+                'nom' => 'Kévin Sester',
+            ],
+            [
+                'service' => 'Reprographie',
+                'nom' => 'Philippe Dieu',
+            ],
+        ];
+
+        $informatique =  [
+            [
+                'service' => 'Responsable',
+                'nom' => 'Brahim Machkouri',
+            ],
+            [
+                'service' => 'Equipe',
+                'nom' => 'Rachid AZEGAGH | Vijai Anandh DJEREAM | Eric MILLET | Bastien VUILLEMARD',
+            ],
+            [
+                'service' => 'Alternante',
+                'nom' => 'Cyndel Herolt',
+            ],
+        ];
+
+        $relationsinternationales =  [
+            [
+                'service' => 'Chargée de mission',
+                'nom' => 'Sarah Mocquery',
+            ],
+        ];
+
+        $bibliotheque =  [
+            [
+                'service' => 'Responsable',
+                'nom' => 'Valérie Mariot',
+            ],
+            [
+                'service' => 'Equipe',
+                'nom' => 'Béranger OSTIN | Gabriel REYMOND',
+            ],
+        ];
+
+        $recherches =  [
+            [
+                'service' => 'CReSTIC Images',
+                'nom' => 'Frédéric MORAIN-NICOLIER | Victor CHEN | Anes DELAHAIES | Régis HUEZ | Jérôme LANDRÉ | Stéphane LEBONVALLET | Gilles MILLON',
+            ],
+            [
+                'service' => 'CReSTIC Automatiques',
+                'nom' => 'Abdelaziz HAMZAOUI | Najib ESSOUNBOULI | David ANNEBICQUE | Lghani MENHOUR | Frédéric NOLLET',
+            ],
+            [
+                'service' => 'ITHEMM',
+                'nom' => 'Mustapha ASSARAR | Daniel SCIDA | Wajdi ZOUARI',
+            ],
+        ];
+
+        $GEA =  [
+            [
+                'poste' => 'Chef de département',
+                'nom' => 'Damien Blaise',
+            ],
+            [
+                'poste' => 'Directeurs des études',
+                'nom' => 'Anne Grenet | Pascal Miraux',
+            ],
+            [
+                'poste' => 'Responsable Parcours : Gestion, Entrepreneuriat et Management d’Activités',
+                'nom' => 'Michèle Robert',
+            ],
+            [
+                'poste' => 'Assistante',
+                'nom' => 'Stéphanie Beaujeu',
+            ],
+        ];
+
+        $GEII =  [
+            [
+                'poste' => 'Chef de département',
+                'nom' => 'Frédéric Morain-Nicolier',
+            ],
+            [
+                'poste' => 'Chef de département adjoint',
+                'nom' => 'Bastien Jacquot',
+            ],
+            [
+                'poste' => 'Directeur des études',
+                'nom' => 'Stéphane Lebonvallet',
+            ],
+            [
+                'poste' => 'Responsable Parcours : Automatisme et Informatique Industrielle',
+                'nom' => 'William Kutyla',
+            ],
+            [
+                'poste' => 'Responsable LP Maintenance et Technologie : systèmes pluritechniques - objets connectés',
+                'nom' => 'Fabrice Sisternas',
+            ],
+            [
+                'poste' => 'Assistance à la pédagogie',
+                'nom' => 'Patrice MITTEAUX | Alexandre REMY',
+            ],
+        ];
+
+
+        return $this->render(
+            'organigramme.html.twig',
+            [
+                'direction' => $direction,
+                'admin' => $administration,
+                'vieetudiante' => $vieetudiante,
+                'logistique' => $logistique,
+                'informatique' => $informatique,
+                'international' => $relationsinternationales,
+                'biblio' => $bibliotheque,
+                'recherches' => $recherches,
+                'gea' => $GEA,
+                'geii' => $GEII,
+            ]
+        );
+    }
 }

@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<nav class="breadcrumbnav" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ path ('iut_test_technique') }}">Accueil</a></li>
+        <li class="breadcrumb-item"><a href="#">L'IUT</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Organigramme</li>
+    </ol>
+</nav>
+
+<div class="container-fluid">
+    <div class="row col-12 deptstitle">
+        <h1>Organigramme</h1>
+    </div>
+
+    <section class="row col-12 chiffres">
+
+        {% for key in organigramme %}
+
+        <div class="card card_chiffres col-4">
+            <div class="card-body">
+                <p class="card-text nbr">{{ key.nombre }}</p>
+                <p class="card-text intitule">{{ key.intitulé }}</p>
+            </div>
+        </div>
+
+        {% endfor %}
+
+    </section>
+</div>
+
+{% endblock %}

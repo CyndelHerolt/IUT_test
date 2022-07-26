@@ -57,11 +57,11 @@ header img {
     font-size: .7vw;
     margin: 0;
 }
-/*
-.navbar {
-    background-color: rgba(255, 209, 24, 0.19) !important;
-}
 
+.navbar {
+    background-color: rgba(255, 183, 0, 0.19) !important;
+}
+/*
 .nav-link {
     color: black !important;
 }
@@ -97,6 +97,7 @@ header img {
     background-color: #fabc25;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+    z-index: -2;
 }
 
 .menuitem:hover:after {
@@ -113,8 +114,9 @@ header img {
 }
 
 footer {
-    background-color: #fafafa;
+    background-color: rgba(255, 183, 0, 0.19);
     padding: 25px;
+    margin-top: 35px;
 }
 
 footer .row {
@@ -346,4 +348,48 @@ footer img:hover {
 .actu .btn-warning {
     border-radius: 15px;
     width: 100%;
+}
+
+.page-link {
+    color: #6c416c;
+}
+
+.page-link:hover {
+    color: #fabc25;
+}
+
+/* ---------liut en chiffres---------- */
+
+.chiffres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.card_chiffres {
+    width: 35vw;
+    box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px, rgb(0 0 0 / 8%) 0px 0px 0px 1px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+}
+
+.card_chiffres .card-body {
+    display: flex;
+    align-items: center;
+}
+
+.card_chiffres .card-body .nbr {
+    font-size: 2vw;
+    font-weight: bolder;
+    margin: 0;
+    color: #fabc25;
+}
+
+.card_chiffres .card-body .intitule {
+    margin: 0 30px;
 }

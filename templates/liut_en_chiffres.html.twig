@@ -21,7 +21,7 @@
 
             <div class="card card_chiffres col-4">
                 <div class="card-body">
-                    <p class="card-text nbr">{{ key.nombre }}</p>
+                    <p class="card-text nbr value " goal="{{ key.nombre }}">0</p>
                     <p class="card-text intitule">{{ key.intitulé }}</p>
                 </div>
             </div>
@@ -30,5 +30,27 @@
 
     </section>
 </div>
+
+<script>
+    const counters = document.querySelectorAll('.value');
+    const speed = 300;
+
+    counters.forEach( counter => {
+        const animate = () => {
+            const value = +counter.getAttribute('goal');
+            const data = +counter.innerText;
+
+            const time = value / speed;
+            if(data < value) {
+                counter.innerText = Math.ceil(data + time);
+                setTimeout(animate, 1);
+            }else{
+                counter.innerText = value;
+            }
+
+        }
+        animate();
+    });
+</script>
 
 {% endblock %}

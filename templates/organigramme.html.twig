@@ -11,22 +11,120 @@
 </nav>
 
 <div class="container-fluid">
-    <div class="row col-12 deptstitle">
+    <div class="row col-12 orgatitle">
         <h1>Organigramme</h1>
     </div>
 
-    <section class="row col-12 chiffres">
+    <section class="row col-12 organigramme">
 
-        {% for key in organigramme %}
+        {% for key in direction %}
+                <ul class="list-group list-group-horizontal direction">
+                    <li class="list-group-item"> <strong> {{ key.poste }} </strong> {{ key.nom }}</li>
+                </ul>
+        {% endfor %}
 
-        <div class="card card_chiffres col-4">
-            <div class="card-body">
-                <p class="card-text nbr">{{ key.nombre }}</p>
-                <p class="card-text intitule">{{ key.intitulé }}</p>
-            </div>
+
+        <div class="administration col-5 card">
+            <h3>Services Administratifs, techniques et de la vie étudiante</h3>
+            <hr>
+
+            <h4 style="border-left: solid 10px #6c416c;border-right: solid 10px #6c416c;">Pôle Administration</h4>
+        {% for key in admin %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+        {% endfor %}
+
+            <h4 style="border-left: solid 10px #6c416c;border-right: solid 10px #6c416c;">Pôle Vie Etudiante</h4>
+            {% for key in vieetudiante %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #6c416c;border-right: solid 10px #6c416c;">Pôle Patrimoine et Logistique</h4>
+            {% for key in logistique %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #6c416c;border-right: solid 10px #6c416c;">Service Informatique et Audiovisuel</h4>
+            {% for key in informatique %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #6c416c;border-right: solid 10px #6c416c;">Chargée de mission Relations Internationales</h4>
+            {% for key in international %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #6c416c;border-right: solid 10px #6c416c;">Bibliothèque Universitaire</h4>
+            {% for key in biblio %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #6c416c;border-right: solid 10px #6c416c;">Pôle Recherche</h4>
+            {% for key in recherches %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
         </div>
 
-        {% endfor %}
+
+        <div class="administration col-5 card">
+            <h3>Pôle Formations</h3>
+            <hr>
+
+            <h4 style="border-left: solid 10px #3e8f6b;border-right: solid 10px #3e8f6b;">Département GEA</h4>
+            {% for key in gea %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #ff8a41;border-right: solid 10px #ff8a41;">Département GEII</h4>
+            {% for key in geii %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #4c9ee3;border-right: solid 10px #4c9ee3;">Département GMP</h4>
+            {% for key in gmp %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #3e748f;border-right: solid 10px #3e748f;">Département MMI</h4>
+            {% for key in mmi %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #123f98;border-right: solid 10px #123f98;">Département TC</h4>
+            {% for key in tc %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+
+            <h4 style="border-left: solid 10px #ee4949;border-right: solid 10px #ee4949;">Département CJ</h4>
+            {% for key in cj %}
+                <ul class="list-group list-group-horizontal card-body">
+                    <li class="list-group-item"><strong> {{ key.poste }} </strong> <br> {{ key.nom }}</li>
+                </ul>
+            {% endfor %}
+        </div>
 
     </section>
 </div>

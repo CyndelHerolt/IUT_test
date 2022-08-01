@@ -17,8 +17,8 @@ body {
 }
 
 header img {
-    height: 105px;
-    margin-left: 2vw;
+    height: 80px;
+    margin: 20px 3vw;
     position: absolute;
     z-index: 2;
 }
@@ -60,6 +60,7 @@ header img {
 
 .navbar {
     background-color: rgba(190, 190, 190, 0.19) !important;
+    backdrop-filter: blur(5px);
 }
 /*
 .nav-link {
@@ -392,4 +393,77 @@ footer img:hover {
 
 .card_chiffres .card-body .intitule {
     margin: 0 30px;
+}
+
+/* ---------organigramme---------- */
+
+.organigramme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.orgatitle {
+    margin: 75px auto 30px auto;
+    color: #6c416c;
+}
+
+.direction {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 30px;
+    padding: 30px 10px;
+    box-shadow: rgb(0 0 0 / 5%) 0 6px 24px 0, rgb(0 0 0 / 8%) 0 0 0 1px;
+    border-radius: 20px;
+    background-color: rgba(108, 65, 108, 0.12);
+    backdrop-filter: blur(5px);
+}
+
+.direction .list-group-item {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.direction strong {
+    margin: 0;
+}
+
+.administration {
+    margin: 20px 30px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    text-align: center;
+}
+
+.administration li {
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: #BEBEBE30;
+}
+
+.administration h4 {
+    margin: 20px 0;
+}
+
+.administration .card {
+    box-shadow: rgb(0 0 0 / 5%) 0 6px 24px 0, rgb(0 0 0 / 8%) 0 0 0 1px;
+    border-radius: 20px;
+    padding: 50px 0;
 }

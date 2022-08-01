@@ -300,122 +300,122 @@ function Actu()
 
         $administration =  [
             [
-                'service' => 'Ressources Humaines',
+                'poste' => 'Responsable Ressources Humaines',
                 'nom' => 'Patricia Lépinois',
             ],
             [
-                'service' => 'Comptabilité',
+                'poste' => 'Responsables Comptabilité',
                 'nom' => 'Marie Kitzinger | Fanny Passemard',
             ],
             [
-                'service' => 'Secrétariat de Direction',
+                'poste' => 'Secrétaires de Direction',
                 'nom' => 'Véronique Planson | Fanny Passemard',
             ],
             [
-                'service' => 'Communication',
+                'poste' => 'Responsables Communication',
                 'nom' => 'Véronique Concil | Michaël Tourneux',
             ],
             [
-                'service' => 'Culture',
+                'poste' => 'Culture',
                 'nom' => 'Caroline Adam',
             ],
         ];
 
         $vieetudiante =  [
             [
-                'service' => 'Accueil',
+                'poste' => 'Accueil',
                 'nom' => 'Julia Fridel',
             ],
             [
-                'service' => 'Responsable vie étudiante',
+                'poste' => 'Responsable vie étudiante',
                 'nom' => 'Sarah Mocquery',
             ],
             [
-                'service' => 'Scolarité',
+                'poste' => 'Scolarité',
                 'nom' => 'Marie-Aude Febvre',
             ],
             [
-                'service' => 'Relations Internationales',
+                'poste' => 'Relations Internationales',
                 'nom' => 'Sarah Mocquery',
             ],
             [
-                'service' => 'Santé',
+                'poste' => 'Santé',
                 'nom' => 'Nathalie Mérino',
             ],
         ];
 
         $logistique =  [
             [
-                'service' => 'Chargé d\opérations',
+                'poste' => 'Chargé d\'opérations',
                 'nom' => 'Thomas Moya',
             ],
             [
-                'service' => 'Patrimoine, sécurité et maintenance',
+                'poste' => 'Patrimoine, sécurité et maintenance',
                 'nom' => 'Sébastien Tupet | Francis Noirot | Pascal PELLÉ | Kevin SESTER | Julien FUGÈRE | David BOUILLOT | Thanh Tan TRAN',
             ],
             [
-                'service' => 'Propreté des locaux',
+                'poste' => 'Propreté des locaux',
                 'nom' => 'Brigitte CLOCHETTE | Sylvie LEBRUN | Wuilly RANDRIANTSOA',
             ],
             [
-                'service' => 'Concierge',
+                'poste' => 'Concierge',
                 'nom' => 'Kévin Sester',
             ],
             [
-                'service' => 'Reprographie',
+                'poste' => 'Reprographie',
                 'nom' => 'Philippe Dieu',
             ],
         ];
 
         $informatique =  [
             [
-                'service' => 'Responsable',
+                'poste' => 'Responsable',
                 'nom' => 'Brahim Machkouri',
             ],
             [
-                'service' => 'Equipe',
+                'poste' => 'Equipe',
                 'nom' => 'Rachid AZEGAGH | Vijai Anandh DJEREAM | Eric MILLET | Bastien VUILLEMARD',
             ],
             [
-                'service' => 'Alternante',
+                'poste' => 'Alternante',
                 'nom' => 'Cyndel Herolt',
             ],
         ];
 
         $relationsinternationales =  [
             [
-                'service' => 'Chargée de mission',
+                'poste' => 'Chargée de mission',
                 'nom' => 'Sarah Mocquery',
             ],
         ];
 
         $bibliotheque =  [
             [
-                'service' => 'Responsable',
+                'poste' => 'Responsable',
                 'nom' => 'Valérie Mariot',
             ],
             [
-                'service' => 'Equipe',
+                'poste' => 'Equipe',
                 'nom' => 'Béranger OSTIN | Gabriel REYMOND',
             ],
         ];
 
         $recherches =  [
             [
-                'service' => 'CReSTIC Images',
+                'poste' => 'CReSTIC Images',
                 'nom' => 'Frédéric MORAIN-NICOLIER | Victor CHEN | Anes DELAHAIES | Régis HUEZ | Jérôme LANDRÉ | Stéphane LEBONVALLET | Gilles MILLON',
             ],
             [
-                'service' => 'CReSTIC Automatiques',
+                'poste' => 'CReSTIC Automatiques',
                 'nom' => 'Abdelaziz HAMZAOUI | Najib ESSOUNBOULI | David ANNEBICQUE | Lghani MENHOUR | Frédéric NOLLET',
             ],
             [
-                'service' => 'ITHEMM',
+                'poste' => 'ITHEMM',
                 'nom' => 'Mustapha ASSARAR | Daniel SCIDA | Wajdi ZOUARI',
             ],
         ];
 
-        $GEA =  [
+        $gea =  [
             [
                 'poste' => 'Chef de département',
                 'nom' => 'Damien Blaise',
@@ -434,7 +434,7 @@ function Actu()
             ],
         ];
 
-        $GEII =  [
+        $geii =  [
             [
                 'poste' => 'Chef de département',
                 'nom' => 'Frédéric Morain-Nicolier',
@@ -461,6 +461,185 @@ function Actu()
             ],
         ];
 
+        $gmp =  [
+            [
+                'poste' => 'Cheffe de département',
+                'nom' => 'Claire Barritault',
+            ],
+            [
+                'poste' => 'Directeur des études',
+                'nom' => 'Olivier Cabot',
+            ],
+            [
+                'poste' => 'Responsable Parcours : Innovation pour l\'Industrie',
+                'nom' => 'Wajdi Zouari',
+            ],
+            [
+                'poste' => 'Assistante',
+                'nom' => 'Elodie Delaporte',
+            ],
+            [
+                'poste' => 'Responsable LP Métiers de l\'Industrie : Conception de produits industriels',
+                'nom' => 'Bruno Bonzano',
+            ],
+            [
+                'poste' => 'Assistance à la pédagogie',
+                'nom' => 'Jacques MAIROT | David GOTROT',
+            ],
+        ];
+
+        $mmi =  [
+            [
+                'poste' => 'Chef de département',
+                'nom' => 'Florent Libbrecht',
+            ],
+            [
+                'poste' => 'Directeurs des études',
+                'nom' => 'Marine Riguet | Gilles Grosdoigt-Artur',
+            ],
+            [
+                'poste' => 'Responsable Parcours :  Stratégie de Communication Numérique et Design d’Expérience',
+                'nom' => 'Guillaume LeSaulnier',
+            ],
+            [
+                'poste' => 'Responsable Parcours : Développement Web et Dispositifs Interactifs',
+                'nom' => 'Fabrice Meuzeret',
+            ],
+            [
+                'poste' => 'Responsable LP Métiers de l\'Informatique - parcours developpement Web Front & Back',
+                'nom' => 'Fabrice Meuzeret',
+            ],
+            [
+                'poste' => 'Assistante',
+                'nom' => 'Marina Matosin',
+            ],
+        ];
+
+        $tc =  [
+            [
+                'poste' => 'Chef de département',
+                'nom' => 'Eric Loizon',
+            ],
+            [
+                'poste' => 'Directeur des études',
+                'nom' => 'Jimmy Feige',
+            ],
+            [
+                'poste' => 'Responsable Parcours : Marketing et Management de Point de Vente',
+                'nom' => 'Alexandre TIERCELIN',
+            ],
+            [
+                'poste' => 'Assistante',
+                'nom' => 'Cathy Marin',
+            ],
+        ];
+
+        $cj =  [
+            [
+                'poste' => 'Cheffe de département',
+                'nom' => 'Anne-Sophie LAVEFVE-LABORDERIE',
+            ],
+            [
+                'poste' => 'Directrice des études',
+                'nom' => 'Sandrine Piat-Millot',
+            ],
+            [
+                'poste' => 'Assistante',
+                'nom' => 'Hélène Couturier',
+            ],
+        ];
+
+        $fc =  [
+            [
+                'poste' => 'Responsable animation qualité',
+                'nom' => 'Maud Briet',
+            ],
+            [
+                'poste' => 'Responsable FC',
+                'nom' => 'Sarah Mocquery',
+            ],
+            [
+                'poste' => 'Responsable LP Technico-commercial Industriel',
+                'nom' => 'Najib ESSOUNBOULI',
+            ],
+            [
+                'poste' => 'Assistant LP Technico-commercial Industriel',
+                'nom' => 'Emmanuel CHAMPONNOIS',
+            ],
+            [
+                'poste' => 'Responsable LP Commercialisation de produits et services - parcours banque assurance',
+                'nom' => 'Gérard GALIPIENZO',
+            ],
+            [
+                'poste' => 'Assistant LP Commercialisation de produits et services - parcours banque assurance',
+                'nom' => 'Isabelle Jaugey',
+            ],
+            [
+                'poste' => 'Responsable LP Assurance Banque Finance - parcours chargé de clientèle',
+                'nom' => 'Patrick Baudimont',
+            ],
+            [
+                'poste' => 'Assistante LP Assurance Banque Finance - parcours chargé de clientèle',
+                'nom' => 'Héloïse GIMON',
+            ],
+            [
+                'poste' => 'Responsable LP Assurance Banque Finance - supports opérationnels',
+                'nom' => 'Laure SARRAZIN',
+            ],
+            [
+                'poste' => 'Assistante LP Assurance Banque Finance - supports opérationnels',
+                'nom' => 'Heloïse Gimon',
+            ],
+            [
+                'poste' => 'Responsable LP Métiers de la GRH',
+                'nom' => 'Véronique Ambrosino',
+            ],
+            [
+                'poste' => 'Assistante LP Métiers de la GRH',
+                'nom' => 'Hélène COUTURIER',
+            ],
+            [
+                'poste' => 'Responsable LP Métiers de la communication - chef de projet',
+                'nom' => 'Olivier Chérain',
+            ],
+            [
+                'poste' => 'Assistante LP Métiers de la GRH',
+                'nom' => 'Héloïse Gimon',
+            ],
+            [
+                'poste' => 'Responsable DU GOL',
+                'nom' => 'Fabien Lallement',
+            ],
+            [
+                'poste' => 'Assistante DU GOL',
+                'nom' => 'Elodie Détrez',
+            ],
+            [
+                'poste' => 'Responsable DCG',
+                'nom' => 'Pascal Miraux',
+            ],
+            [
+                'poste' => 'Assistante DCG',
+                'nom' => 'Elodie Détrez',
+            ],
+            [
+                'poste' => 'Responsable DAEU',
+                'nom' => 'Damien Sa',
+            ],
+            [
+                'poste' => 'Assistante DAEU',
+                'nom' => 'Isabelle Jaugey',
+            ],
+            [
+                'poste' => 'Responsable Passerelle',
+                'nom' => 'Frédéric Nollet',
+            ],
+            [
+                'poste' => 'Assistante Passerelle',
+                'nom' => 'Isabelle Jaugey',
+            ],
+        ];
+
 
         return $this->render(
             'organigramme.html.twig',
@@ -473,8 +652,13 @@ function Actu()
                 'international' => $relationsinternationales,
                 'biblio' => $bibliotheque,
                 'recherches' => $recherches,
-                'gea' => $GEA,
-                'geii' => $GEII,
+                'gea' => $gea,
+                'geii' => $geii,
+                'gmp' => $gmp,
+                'mmi' => $mmi,
+                'tc' => $tc,
+                'cj' => $cj,
+                'fc' => $fc,
             ]
         );
     }
